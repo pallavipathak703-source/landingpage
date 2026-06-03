@@ -1,0 +1,180 @@
+     <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pallavi Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* NAVBAR */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: lightblue;
+        }
+
+        /* HERO */
+        .hero {
+            margin-top: 70px;
+            padding: 60px;
+            text-align: center;
+            background: lightblue;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            background: blue;
+            color: white;
+        }
+
+        /* SECTION */
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* CARDS */
+        .card {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            background: lightblue;
+        }
+
+        /* SKILLS */
+        .bar {
+            width: 60%;
+            height: 10px;
+            background: #ccc;
+            margin: 10px auto;
+        }
+
+        .fill {
+            height: 10px;
+            background: blue;
+        }
+
+        /* CONTACT */
+        input, textarea {
+            width: 60%;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <h2>Pallavi</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Hi, I'm Pallavi 👋</h1>
+    <p>Web Developer | C, C++ | DSA</p>
+    <button onclick="scrollToSection('services')">Explore</button>
+</div>
+
+<!-- SERVICES -->
+<div class="section" id="services">
+    <h2>My Services</h2>
+    <div class="card">Web Design</div>
+    <div class="card">Frontend Development</div>
+    <div class="card">Projects</div>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+    <h2>My Skills</h2>
+
+    <p>HTML</p>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+
+    <p>CSS</p>
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
+
+    <p>JavaScript</p>
+    <div class="bar"><div class="fill" style="width:70%"></div></div>
+
+    <p>C / C++</p>
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
+
+    <p>DSA</p>
+    <div class="bar"><div class="fill" style="width:70%"></div></div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section" id="projects">
+    <h2>My Projects</h2>
+    <p> Portfolio Website</p>
+    <p> Todo App</p>
+    <p>calculator</p>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <h2>Contact Me</h2>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button onclick="alert('Message Sent!')">Send</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Pallavi Pathak | Web Developer</p>
+</footer>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
